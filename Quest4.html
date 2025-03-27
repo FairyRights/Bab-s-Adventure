@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Healer's Challenge ⚔️</title> <!-- Creative title for the quest -->
+    <style>
+        body {
+            font-family: 'Cinzel', serif;
+            background-color: #1a1a1a;
+            color: #f4e3c2;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px #000;
+        }
+        h1 {
+            font-size: 3em;
+            color: #f4e3c2;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            color: #f4e3c2;
+            margin-bottom: 20px;
+        }
+        input {
+            font-size: 1.2em;
+            padding: 10px;
+            margin: 20px;
+            width: 200px;
+            text-align: center;
+        }
+        button {
+            background-color: #4a2e0f;
+            color: #f4e3c2;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.5em;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #6a3e1e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Healer's Challenge 💀</h1> <!-- New creative title -->
+        <p>🧪 Three stand watch, silent and tall,</p>
+        <p>Perched above, they see it all.</p>
+        <p>Not on a head, yet still they rest,</p>
+        <p>To find your clue, choose one and test</p>
+        
+        <p>What is the answer, adventurer? 🤔</p>
+        <input type="text" id="riddleAnswer" placeholder="Enter your answer here" />
+        <br />
+        <button onclick="checkAnswer()">Submit Answer</button>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById('riddleAnswer').value.toLowerCase();
+            const correctAnswer = 'shuriken';
+
+            if (answer === correctAnswer) {
+                alert("Correct! You may proceed to the next trial.");
+                window.location.href = "quest5.html"; // Redirect to next quest page
+            } else {
+                alert("Incorrect answer. Try again.");
+            }
+        }
+    </script>
+</body>
+</html>
