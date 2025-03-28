@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rogue's Revelation 🔐</title>
+    <style>
+        body {
+            font-family: 'Cinzel', serif; /* Medieval-style font */
+            background-color: #f4e3c2; /* Beige background */
+            color: #3e2a47; /* Dark purple for text for a more medieval look */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            height: 100vh; /* Full viewport height */
+            overflow: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .container {
+            max-width: 90%; /* Adjust container width to fit mobile */
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px #000;
+            opacity: 0;
+            animation: fadeIn 2s forwards; /* Fade-in animation for container */
+        }
+
+        h1 {
+            font-size: 2.5em; /* Adjusted for mobile */
+            color: #f4e3c2;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: congratsTitle 3s ease-out forwards; /* Scale up & float effect */
+        }
+
+        p {
+            font-size: 1.5em; /* Adjusted for mobile */
+            line-height: 1.6;
+            color: #f4e3c2;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInText 2s ease-out forwards;
+        }
+
+        .emoji {
+            font-size: 1.5em;
+        }
+
+        /* Fade-in effect for container */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Title animation: Floating & Scaling */
+        @keyframes congratsTitle {
+            0% {
+                opacity: 0;
+                transform: scale(0.8) translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        /* Text Fade-in effect with scaling */
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Media Query for small screens (Mobile) */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em; /* Smaller title font on mobile */
+            }
+            p {
+                font-size: 1.2em; /* Smaller paragraph font on mobile */
+            }
+            .container {
+                padding: 15px; /* Reduce padding on mobile for better space */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Congratulations, Rogue! 🗝️</h1>
+        <p>🎉 You've proven yourself worthy!</p>
+		<p>But you didn’t think it was going to be that easy, did you?</p>
+		<p>The trials were only the beginning...</p>
+        <p>To gain what is rightfully yours, solve the riddle that binds this treasure.</p>
+		<p>A rogue’s prize is never plain to see,</p>
+        <p>But hidden well, with trickery.</p>
+        <p>Look to the past, the clues you’ve met,,</p>
+		<p>The first of each will spell your bet.</p>
+        <p>A shadow’s embrace 🖤 is waiting for you.</p>
+		
+		<p>Ready to claim your treasure, rogue?</p>
+    </div>
+</body>
+</html>
